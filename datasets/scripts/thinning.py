@@ -88,8 +88,8 @@ def main():
         def __call__(self,x):
             return (x<1).to(x.dtype)
 
-    path_original ='/home/francisco/dataset/capitals64/train/1/0.png'
-    path_target='/home/francisco/dataset/test.png'
+    path_original ='/XXXX-7/XXXX-1/dataset/capitals64/train/1/0.png'
+    path_target='/XXXX-7/XXXX-1/dataset/test.png'
     original = load_image_to_tensor(path_original,False,False)
     trans=transforms.Compose([
         ThresholdTransform(thr_255=254),
